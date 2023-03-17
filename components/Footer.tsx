@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
-import Image from 'next/image';
 import FooterContent from './FooterContent';
 import FooterContentWithLink from './FooterContentWithLink';
 
@@ -9,59 +8,14 @@ const Row = styled.div`
     display: flex;
 `;
 
-const SNSWrapper = styled.div`
-    position: absolute;
-    top: 3rem;
-    right: 0;
-
-    div {
-        margin-right: 1.5rem;
-    }
-    
-    display: none;
-
-    @media (min-width: 500px) {
-        display: flex;
-    }
-`;
-
 const StyledContainer = styled(Container)`
     padding: 3rem 0;
-    position: relative;
-`;
-
-const SNSIconWrapper = styled.div`
-    width: 1.5rem;
-    aspect-ratio: 1 / 1;
     position: relative;
 `;
 
 const Footer = () => {
     return (
         <StyledContainer>
-            <SNSWrapper>
-                <SNSIconWrapper>
-                    <Image
-                        alt="인스타"
-                        src="/svg/instagram.svg"
-                        fill
-                    />
-                </SNSIconWrapper>
-                <SNSIconWrapper>
-                    <Image
-                        alt="페이스북"
-                        src="/svg/facebook.svg"
-                        fill
-                    />
-                </SNSIconWrapper>
-                <SNSIconWrapper>
-                    <Image
-                        alt="트위터"
-                        src="/svg/twitter.svg"
-                        fill
-                    />
-                </SNSIconWrapper>
-            </SNSWrapper>
             <Row>
                 <FooterContentWithLink
                     menuHeader='업무영역'

@@ -40,6 +40,11 @@ const Header = () => {
                 <div>
                     <Link 
                     style={{ marginRight: '10px', color: 'black'}}
+                    href="http://www.sayulaw.com/startup">
+                        업무영역
+                    </Link>
+                    <Link 
+                    style={{ marginRight: '10px', color: 'black'}}
                     href="http://www.sayulaw.com/INSIGHTS">
                         성공사례
                     </Link>
