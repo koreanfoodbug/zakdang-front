@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 import Image from 'next/image';
 import FooterContent from './FooterContent';
+import FooterContentWithLink from './FooterContentWithLink';
 
 const Row = styled.div`
     display: flex;
@@ -62,6 +63,23 @@ const Footer = () => {
                 </SNSIconWrapper>
             </SNSWrapper>
             <Row>
+                <FooterContentWithLink
+                    menuHeader='솔루션'
+                    menus={[
+                        '스타트업',
+                        '금융, 핀테크',
+                        '블록체인',
+                        '민사, 가사',
+                        '형사'
+                    ]}
+                    links={[
+                        'http://www.sayulaw.com/startup',
+                        'http://www.sayulaw.com/finance',
+                        'http://www.sayulaw.com/block',
+                        'http://www.sayulaw.com/civil',
+                        'http://www.sayulaw.com/detective'
+                    ]}
+                />
                 <FooterContent
                     menuHeader='고객센터'
                     menus={[

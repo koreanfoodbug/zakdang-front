@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import Link from 'next/link'
 
 const Wrapper = styled.div`
     width: 100%;
@@ -36,6 +37,9 @@ const Header = () => {
                     법률사무소 사유
                 </div>
                 <div>
+                    <Link href="http://www.sayulaw.com/INSIGHTS">
+                        성공사례
+                    </Link>
                     <Button size="sm" variant="primary">
                         상담 신청하기
                     </Button>
