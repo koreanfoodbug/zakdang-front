@@ -37,13 +37,13 @@ const Lawyers = () => {
             </p>
             <Row>
                 <Col>
-                    <Lawyer name="송지원" imgSrc="/image/lawyer-jiwon.jpg" />
+                    <Lawyer name="송지원" imgSrc="/image/lawyer-jiwon.jpg" link="http://www.sayulaw.com/song" />
                 </Col>
                 <Col>
-                    <Lawyer name="최지현" imgSrc="/image/lawyer-jihyun.jpg" />
+                    <Lawyer name="최지현" imgSrc="/image/lawyer-jihyun.jpg" link="http://www.sayulaw.com/Choi" />
                 </Col>
                 <Col>
-                    <Lawyer name="이상호" imgSrc="/image/lawyer-sangho.jpg" />
+                    <Lawyer name="이상호" imgSrc="/image/lawyer-sangho.jpg" link="http://www.sayulaw.com/lee" />
                 </Col>
             </Row>
         </StyledContainer>

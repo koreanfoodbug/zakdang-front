@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link'
 
 const Article = styled.article`
     position: relative;
@@ -46,9 +47,10 @@ const Article = styled.article`
 interface Props {
     name: string;
     imgSrc: string;
+    link: string;
 }
 
-const Lawyer: React.FC<Props> = ({ name, imgSrc }) => {
+const Lawyer: React.FC<Props> = ({ name, imgSrc, link }) => {
     return (
         <Article>
             <Image
@@ -62,9 +64,12 @@ const Lawyer: React.FC<Props> = ({ name, imgSrc }) => {
             <span>
                 {name}
             </span>
-            <span>
-                자세히 보기
-            </span>
+
+            <Link href={link}>
+                <span>
+                    자세히 보기
+                </span>
+            </Link>
         </Article>
     );
 };
