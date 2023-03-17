@@ -26,7 +26,11 @@ const Wrapper = styled.div`
 const RequestCounselingSection = () => {
     return (
         <Wrapper>
-            <Header />
+            {
+                typeof window !== 'undefined' && (
+                    <Header />
+                )
+            }
             <Image
                 alt="상담 신청 배경 사진"
                 src="/image/requestCounselingSectionBackground.jpg"
