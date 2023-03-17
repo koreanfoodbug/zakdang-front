@@ -63,30 +63,6 @@ const Footer = () => {
             </SNSWrapper>
             <Row>
                 <FooterContent
-                    menuHeader='소개'
-                    menus={[
-                        '서비스',
-                        '사유 피플',
-                        '고객 리뷰',
-                        '미디어 키트',
-                    ]}
-                />
-                <FooterContent
-                    menuHeader='약관'
-                    menus={[
-                        '이용약관',
-                        '개인정보보호방침',
-                        '쿠키 이용방침',
-                    ]}
-                />
-                <FooterContent
-                    menuHeader='공지사항'
-                    menus={[
-                        '공지사항',
-                        '자주묻는 질문',
-                    ]}
-                />
-                <FooterContent
                     menuHeader='고객센터'
                     menus={[
                         '대표전화: 02)6956-4662',

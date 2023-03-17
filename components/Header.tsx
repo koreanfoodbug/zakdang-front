@@ -36,18 +36,6 @@ const Header = () => {
                     법률사무소 사유
                 </div>
                 <div>
-                    <span>
-                        서비스
-                    </span>
-                    <span>
-                        사유 피플
-                    </span>
-                    <span>
-                        고객 리뷰
-                    </span>
-                    <span>
-                        블로그
-                    </span>
                     <Button size="sm" variant="primary">
                         상담 신청하기
                     </Button>
