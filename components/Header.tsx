@@ -30,6 +30,7 @@ const Wrapper = styled.div`
 `;
 
 const Header = () => {
+    const w = window as unknown as { ChannelIO: (arg: string) => void };
     return (
         <Container>
             <Wrapper>
@@ -42,7 +43,7 @@ const Header = () => {
                     href="http://www.sayulaw.com/INSIGHTS">
                         성공사례
                     </Link>
-                    <Button size="sm" variant="primary" style={{ marginLeft: '5px'}} onClick={() => { window.ChannelIO("showMessenger") }}>
+                    <Button size="sm" variant="primary" style={{ marginLeft: '5px'}} onClick={() => { w.ChannelIO("showMessenger") }}>
                         상담 신청하기
                     </Button>
                 </div>
