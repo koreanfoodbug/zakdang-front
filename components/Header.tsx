@@ -42,7 +42,7 @@ const Header = () => {
                     href="http://www.sayulaw.com/INSIGHTS">
                         성공사례
                     </Link>
-                    <Button size="sm" variant="primary" style={{ marginLeft: '5px'}}>
+                    <Button size="sm" variant="primary" style={{ marginLeft: '5px'}} onClick={() => { window.ChannelIO("showMessenger") }}>
                         상담 신청하기
                     </Button>
                 </div>
