@@ -35,7 +35,7 @@ const Header = () => {
         <Container>
             <Wrapper>
                 <div>
-                    법률사무소 사유
+                    테스트
                 </div>
                 <div>
                     <Link 
