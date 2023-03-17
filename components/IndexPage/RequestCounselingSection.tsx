@@ -24,6 +24,7 @@ const Wrapper = styled.div`
 `;
 
 const RequestCounselingSection = () => {
+    const w = window as unknown as { ChannelIO: (arg: string) => void };
     return (
         <Wrapper>
             {
@@ -39,7 +40,7 @@ const RequestCounselingSection = () => {
             />
             <Container>
                 <p>탄탄한 전문성을 바탕으로<br /> 명쾌한 해결책을 제시합니다.</p>
-                <Button size="lg" variant="primary">상담 신청하기</Button>
+                <Button size="lg" variant="primary" onClick={() => { w.ChannelIO("showMessenger") }}>상담 신청하기</Button>
             </Container>
         </Wrapper>
     );

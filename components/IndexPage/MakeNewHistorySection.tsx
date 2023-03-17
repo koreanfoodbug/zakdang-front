@@ -36,6 +36,7 @@ const StyledContainer = styled(Container)`
 `;
 
 const MakeNewHistorySection = () => {
+    const w = window as unknown as { ChannelIO: (arg: string) => void };
     return (
         <Section>
             <Image
@@ -53,7 +54,7 @@ const MakeNewHistorySection = () => {
                 <p>
                     100+ 고객사의 더 큰 만족을 위해 노력하겠습니다.
                 </p>
-                <Button variant="primary" size="lg">
+                <Button variant="primary" size="lg" onClick={() => { w.ChannelIO("showMessenger") }}>
                     상담 신청하기
                 </Button>
             </StyledContainer>

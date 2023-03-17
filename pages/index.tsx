@@ -12,11 +12,19 @@ export default function Home() {
       <Head>
         <meta name="description" content="" />
       </Head>
+            {
+                typeof window !== 'undefined' && (
       <RequestCounselingSection />
+                )
+            }
       <IntroduceSection />
       <Carousel />
       <LawyersSection />
+            {
+                typeof window !== 'undefined' && (
       <MakeNewHistorySection />
+                )
+            }
       <Footer />
     </>
   )
