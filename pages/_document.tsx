@@ -1,12 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { useEffect } from 'react';
 
 export default function Document() {
-  useEffect(() => {
-    ChannelIO('boot', {
-      "pluginKey": "YOUR_PLUGIN_KEY" // fill your plugin key
-    });
-  }, []);
   
   return (
     <Html lang="en">
