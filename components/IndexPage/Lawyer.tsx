@@ -65,7 +65,7 @@ const Lawyer: React.FC<Props> = ({ name, imgSrc, link }) => {
                 {name}
             </span>
 
-            <Link href={link}>
+            <Link href={link} style={{ marginTop: 'auto' }}>
                 <span>
                     자세히 보기
                 </span>

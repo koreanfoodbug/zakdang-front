@@ -64,7 +64,7 @@ const Footer = () => {
             </SNSWrapper>
             <Row>
                 <FooterContentWithLink
-                    menuHeader='솔루션'
+                    menuHeader='업무영역'
                     menus={[
                         '스타트업',
                         '금융, 핀테크',

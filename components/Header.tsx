@@ -37,10 +37,12 @@ const Header = () => {
                     법률사무소 사유
                 </div>
                 <div>
-                    <Link href="http://www.sayulaw.com/INSIGHTS">
+                    <Link 
+                    style={{ marginRight: '10px', color: 'black'}}
+                    href="http://www.sayulaw.com/INSIGHTS">
                         성공사례
                     </Link>
-                    <Button size="sm" variant="primary">
+                    <Button size="sm" variant="primary" style={{ marginLeft: '5px'}}>
                         상담 신청하기
                     </Button>
                 </div>
